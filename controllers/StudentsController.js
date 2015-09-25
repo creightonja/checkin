@@ -6,7 +6,7 @@ studentLogin.controller('StudentsCtrl', function StudentsCtrl($scope, StudentsFa
     student.login = true;
   };
 
-  $scope.studentLogout = function(){
+  $scope.studentLogout = function(student){
     student.login = false;
   };
 

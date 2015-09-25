@@ -2,8 +2,8 @@
   <h1>Here are all of your students:</h1>
   <ul class="list-group">
     <li class="list-group-item" ng-repeat="item in students">{{ item.name }}
-      <span ng-show="item.login == false"><a id="login" ng-click="studentLogin(item)">Login</a></span>
-      <span ng-show="item.login == true"><a id="logout" ng-click="studentLogout(item)">Logout</a></span>
+      <span class="log" ng-show="item.login == false"><a id="login" ng-click="studentLogin(item)">Login</a></span>
+      <span class="log" ng-show="item.login == true"><a id="logout" ng-click="studentLogout(item)">Logout</a></span>
     </li>
   </ul>
 

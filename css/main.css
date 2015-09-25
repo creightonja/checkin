@@ -1,11 +1,21 @@
-.login {
-  margin: 20px;
+#login {
+  margin: 40px;
   border: black solid 1px;
   background-color: green;
+  padding: 8px;
 }
 
-.logout {
-  margin: 20px;
+#logout {
+  margin: 40px;
   border: black solid 1px;
   background-color: red;
+  padding: 8px;
+}
+
+#login span a{
+  color: white;
+}
+
+.log a{
+  color: white;
 }
