@@ -1,0 +1,14 @@
+<div ng-show="students.length">
+  <h1>Here are all of your students:</h1>
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="item in students">{{ item.name }}
+      <span ng-show="item.login == false"><a id="login" ng-click="studentLogin(item)">Login</a></span>
+      <span ng-show="item.login == true"><a id="logout" ng-click="studentLogout(item)">Logout</a></span>
+    </li>
+  </ul>
+
+  <a ui-sref="students">See who is logged in.</a>
+  <a ui-sref="home">Navigate to home page</a>
+
+
+</div>

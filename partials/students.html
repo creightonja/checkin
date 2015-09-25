@@ -1,0 +1,16 @@
+<div ng-show="students.length">
+  <h1>Here are all of the logged in students:</h1>
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="item in students | filter: { login: false}">{{ item.name }}</li>
+  </ul>
+</div>
+
+<div ng-show="students.length">
+  <h1>Here are all the students not logged in:</h1>
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="item in students | filter: { login: true}">{{ item.name }}</li>
+  </ul>
+  <a ui-sref="login">Go to log in page</a>
+
+
+</div>
