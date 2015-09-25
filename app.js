@@ -1,4 +1,4 @@
-var studentLogin = angular.module('studentLogin', ['ui-router']);
+var studentLogin = angular.module('studentLogin', ['ui.router']);
 
 studentLogin.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider.state('home', {
